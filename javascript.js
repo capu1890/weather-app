@@ -19,12 +19,6 @@ function getResults (query) {
     }) .then(displayResults);
 };
 
-var skycons = new Skycons({"color": "white"});
-skycons.add(document.querySelector(".icon"), Skycons.RAIN);
-skycons.set("icon", Skycons.PARTLY_CLOUDY_NIGHT);
-skycons.play();
-
-
 function displayResults (weather) {
     console.log(weather);
     let city = document.querySelector('.location .city');
